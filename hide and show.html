@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hide and Show</title>
+    <!--External CSS link-->
+    <link href="hide and show.css" type="text/css" rel="stylesheet" />
+    <!--External google font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <!--External Vue.js CDN link version 3-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--External JS link deferred-->
+    <script type="text/javascript" src="hide and show.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <h1>Magic</h1>
+        <span v-if="visible">Now you see me!</span>
+        <button v-on:click="hide">Hide Text</button>
+        <button v-on:click ="show">Show Text</button>
+    </div>
+</body>
+</html>
